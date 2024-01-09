@@ -1,0 +1,15 @@
+.resumeLink {
+    @include flexCenter(row, center, center);
+    width: 20%;
+    border: 1px solid $secondary-color;
+    border-radius: 20px;
+    padding: 1.5%;
+    margin-top: 2%;
+    .resumeLinkPic {
+        margin-right: 2%;
+    }
+    &:hover {
+        background-color: $light-primary-color;
+        box-shadow: 0 0 5px $secondary-color;
+    }
+}

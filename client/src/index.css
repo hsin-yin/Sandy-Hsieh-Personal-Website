@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Ubuntu, Helvetica Neue, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #304655;
+  color: #b59283;
+}
+
+::-moz-selection {
+  background-color: #dad0ce;
+  color: #304655;
+}
+
+::selection {
+  background-color: #dad0ce;
+  color: #304655;
+}
+
+/* Firefox 兼容性 */
+::-moz-selection {
+  background-color: #304655;
+  color: #dad0ce;
+}
+
+.app {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .app {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .app .nav {
+    display: none;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: #dad0ce;
+}
+
+h2 {
+  margin-bottom: 3%;
+}
+
+h3 {
+  margin-bottom: 2%;
+}
+
+p {
+  overflow-wrap: break-word;
+  padding: 2% 0;
+  line-height: 1.5rem;
+}
+
+a {
+  color: #dad0ce;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  padding: 0.4rem;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0.5rem;
+}/*# sourceMappingURL=index.css.map */

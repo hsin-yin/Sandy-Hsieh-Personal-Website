@@ -1,0 +1,105 @@
+@import './variables';
+
+.header {
+    position: sticky;
+    top: 16%;
+    margin: 0 0 auto 25%;
+    padding-right: 15%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin-top: 0.5%;
+    }
+    .introductionContent {
+        margin-top: 6%;
+        width: 80%;
+    }
+    @include mobile {
+        position: relative;
+        margin: 0 0% 0 0%;
+        padding: 15% 0 0 0;
+        width: 80%;
+    }
+}
+.socialMedia {
+    @include flexCenter(row, flex-start, center);;
+    position: relative;
+    width: 100%;
+    
+    li {
+        margin-top: 5%;
+        padding: 0 1.5%;
+        a {
+            color: inherit;
+            @include transition-ease;
+            &:hover {
+                color: $text-color;
+            }
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
+    .email {
+        @include flexCenter(row, flex-start, center);
+        position: relative;
+        width:100%;
+        svg {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin: 0 5% 0 1%;
+            min-width: 24px;
+        }
+        p {
+            word-break: break-all;
+        }
+    }
+}
+.nav {
+    margin: 8% 0 0 2%;
+    display: flex;
+    flex-direction: column;
+    li {
+        // margin: 2%;
+        a {
+            @include flexCenter(row, flex-start, center);
+            cursor: pointer;
+            color: inherit;
+
+            .navHightlight {
+                width: 0%;
+            }
+            
+            .navHightlightStyle {
+                position: relative;
+                left: 5%;
+                width: 30%;
+                height: 2px;
+                background-color: $text-color;
+                @include transition-ease(width, 0.15s)
+            }
+            
+            .navTitle {
+                padding: 3%;
+                display:inline-block;
+                color: $text-color;
+            }
+            .navTitle:after {
+                display: block;
+                content: '';
+                border-bottom: solid 2px $text-color;
+                padding-bottom: 3%; 
+                transform: scaleX(0);
+                @include transition-ease(transform, 0.15s);
+                transform-origin: 100% 50%;
+            }
+            .navTitleStyle{
+                color: $secondary-color;
+                &:after{ transform-origin: 100% 50%; };
+                &:hover:after{ transform: scaleX(1); transform-origin: 0% 50%; }
+            }
+        }
+    }
+}

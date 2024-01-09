@@ -1,0 +1,58 @@
+.thanks {
+    padding: 0;
+}
+.thanks + p {
+    padding-top: 0%;
+}
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+
+    
+    label {
+        display: block;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    ::placeholder {
+        color: $text-color;
+    }
+
+    input, textarea, button {
+        background-color: $primary-color;
+        margin-bottom: 3%; 
+        font-size: 1rem;
+        padding: 0.4rem;
+        width: 100%;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        color: $text-color;
+    }
+
+    input:focus, textarea:focus, input:focus{
+        outline: none;
+        box-shadow: 0 0 5px $secondary-color;
+        background-color: $light-primary-color;
+    }
+
+    button {
+        width: 18%;
+        padding: 1%;
+        border-radius: 10px;
+        border: 1px solid $secondary-color;
+        color: $text-color;
+        cursor: pointer;
+        &:hover {
+            background-color: $light-primary-color;
+            box-shadow: 0 0 5px $secondary-color;
+        }
+    }
+    .sendingStyle {
+        padding: inherit 2%;
+        min-width: 80px;
+    }
+}
