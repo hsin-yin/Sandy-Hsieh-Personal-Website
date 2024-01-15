@@ -42,7 +42,7 @@ const Projects = () => {
                     skills={BiscuitGiftBoxSkills}
                 />
             </a>
-            <a target="_blank" rel="noreferrer" href='#'>
+            <a target="_blank" rel="noreferrer" href='https://stock-photo-website-production.up.railway.app'>
                 <SingleProject
                     img={photosWebsiteImg}
                     alt={photosWebsiteAlt}
