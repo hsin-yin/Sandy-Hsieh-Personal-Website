@@ -36,7 +36,7 @@ const GetInTouch = () => {
         }
         try {
             setLoading(true);
-            const response = await axios.post('/submit', formData, {
+            const response = await axios.post('https://sandy-hsieh.up.railway.app/submit', formData, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
