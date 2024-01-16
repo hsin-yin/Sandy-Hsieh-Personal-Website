@@ -7,7 +7,7 @@ const GetInTouch = () => {
         email: '',
         message: ''
     });
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     const submitButtonClass = loading ? 'submitButton sendingStyle' : 'submitButton';
 
