@@ -18,9 +18,9 @@ const Projects = () => {
 
     // MERN project
     const MERNproject = "/images/MERNprojectImg.png";
-    const MERNprojectAlt = `Stock Photos website`;
-    const MERNprojectTitle = `Stock Photo website`;
-    const MERNprojectContent = `Use the pexels's API, provides a gallery as well as the ability to search for photos, which can help anyone in need of visuals to find great images and videos that can be downloaded and used for free.`;
+    const MERNprojectAlt = `Learning and Teaching Platform`;
+    const MERNprojectTitle = `Learning and Teaching Platform`;
+    const MERNprojectContent = `Students can search and register for classes they want to take, and teachers can offer classes for students to register for.`;
     const MERNprojectSkills = ['React', 'Bootstrap', 'Node.js', 'Express.js', 'MongoDB'];
 
     // project fastfood website

@@ -7,25 +7,14 @@ const GetInTouch = () => {
         email: '',
         message: ''
     });
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
-    // const sumitButton = document.querySelector('.submitButton');
-    // const contactForm = document.querySelector('#contactForm');
     const submitButtonClass = loading ? 'submitButton sendingStyle' : 'submitButton';
-
 
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
-
-    // contactForm.addEventListener('submit', () => {
-    //     if (loading) {
-    //         sumitButton.classList.add('sendingStyle');
-    //     } else {
-    //         sumitButton.classList.remove('sendingStyle');
-    //     }
-    // })
 
     const handleSubmit = async (event) => {
         event.preventDefault();
