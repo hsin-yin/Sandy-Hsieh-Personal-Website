@@ -131,6 +131,31 @@
   }
 }
 
+.singleProjectVideo .playIcon {
+  color: rgb(110, 107, 107);
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 90%;
+  height: 40px;
+  display: none;
+}
+.singleProjectVideo:hover {
+  cursor: pointer;
+}
+.singleProjectVideo:hover .playIcon {
+  display: block;
+}
+.singleProjectVideo #project-video {
+  width: 78%;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  border-radius: 20px;
+}
+
 .thanks {
   padding: 0;
 }
@@ -172,7 +197,7 @@
   box-shadow: 0 0 5px #b59283;
   background-color: #385061;
 }
-.contactForm button {
+.contactForm .submitButton {
   width: 18%;
   padding: 1%;
   border-radius: 10px;
@@ -180,7 +205,7 @@
   color: #dad0ce;
   cursor: pointer;
 }
-.contactForm button:hover {
+.contactForm .submitButton:hover {
   background-color: #385061;
   box-shadow: 0 0 5px #b59283;
 }

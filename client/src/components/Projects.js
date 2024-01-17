@@ -1,5 +1,6 @@
 import React from 'react';
 import SingleProject from './SingleProject';
+import SingleProjectVideo from './SingleProjectVideo';
 
 const Projects = () => {
     // project BiscuitGiftBox
@@ -8,8 +9,9 @@ const Projects = () => {
     const BiscuitGiftBoxTitle = `Customized Biscuit Gift Box Website (team project)`;
     const BiscuitGiftBoxContent = `A website that offers customized cookie gift boxes, where you can choose the flavor of the cookies and arrange them to your liking, which will be displayed on the screen.`;
     const BiscuitGiftBoxSkills = ['CSS', 'JavaScript', 'ejs', 'Node.js', 'Express.js', 'MySQL'];
+    const BiscuitGiftBoxVideo = "/videos/unidessertVideo.mp4";
 
-    // project 圖片網站
+    // project stock photo website
     const photosWebsiteImg = "/images/photosWebsiteImg.png";
     const photosWebsiteAlt = `Stock Photos website`;
     const photosWebsiteTitle = `Stock Photo website`;
@@ -17,13 +19,14 @@ const Projects = () => {
     const photosWebsiteSkills = ['React', 'Scss'];
 
     // MERN project
-    const MERNproject = "/images/MERNprojectImg.png";
+    const MERNprojectImg = "/images/MERNprojectImg.png";
     const MERNprojectAlt = `Learning and Teaching Platform`;
     const MERNprojectTitle = `Learning and Teaching Platform`;
     const MERNprojectContent = `Students can search and register for classes they want to take, and teachers can offer classes for students to register for.`;
     const MERNprojectSkills = ['React', 'Bootstrap', 'Node.js', 'Express.js', 'MongoDB'];
+    const MERNprojectVideo = "/videos/MERNVideo.mp4";
 
-    // project fastfood website
+    // project static fastfood website
     const burgerWebsiteImg = "/images/burgerWebsiteImg.png";
     const burgerWebsiteAlt = `static fastfood website`
     const burgerWebsite = `Static Fast Food Website`;
@@ -33,15 +36,16 @@ const Projects = () => {
     return (
         <div id="project" className="main_content project">
             <h3>Projects</h3>
-            <a target="_blank" rel="noreferrer" href='#'>
-                <SingleProject
+            <>
+                <SingleProjectVideo
                     img={BiscuitGiftBoxImg}
                     alt={BiscuitGiftBoxAlt}
                     title={BiscuitGiftBoxTitle}
                     content={BiscuitGiftBoxContent}
                     skills={BiscuitGiftBoxSkills}
+                    videoSrc={BiscuitGiftBoxVideo}
                 />
-            </a>
+            </>
             <a target="_blank" rel="noreferrer" href='https://stock-photo-website-production.up.railway.app'>
                 <SingleProject
                     img={photosWebsiteImg}
@@ -51,15 +55,16 @@ const Projects = () => {
                     skills={photosWebsiteSkills}
                 />
             </a>
-            <a target="_blank" rel="noreferrer" href='#'>
-                <SingleProject
-                    img={MERNproject}
+            <>
+                <SingleProjectVideo
+                    img={MERNprojectImg}
                     alt={MERNprojectAlt}
                     title={MERNprojectTitle}
                     content={MERNprojectContent}
                     skills={MERNprojectSkills}
+                    videoSrc={MERNprojectVideo}
                 />
-            </a>
+            </>
             <a target="_blank" rel="noreferrer" href='https://burger-bucket.s3.amazonaws.com/index.html'>
                 <SingleProject
                     img={burgerWebsiteImg}

@@ -4,7 +4,7 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 const SingleProject = ({ img, alt, title, content, skills }) => {
     return (
         <div className='singleProject'>
-            <img className='img' alt={alt} src={img}></img>
+            <img className='img' alt={alt} src={img} />
             <h4 className='title'>
                 {title}
                 <span className='directTo'><BsBoxArrowUpRight />
