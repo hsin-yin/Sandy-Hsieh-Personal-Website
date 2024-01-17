@@ -15,14 +15,11 @@ const SingleProjectVideo = ({ img, alt, title, content, skills, videoSrc }) => {
             const handleClickOutside = (event) => {
                 if (videoRef.current && !videoRef.current.contains(event.target)) {
                     setShowVideo(false);
+                    video.pause()
                     video.style.display = 'none';
                 }
             };
             document.addEventListener('click', handleClickOutside);
-
-            video.addEventListener('ended', () => {
-                document.removeEventListener('click', handleClickOutside);
-            });
         }
     };
 
