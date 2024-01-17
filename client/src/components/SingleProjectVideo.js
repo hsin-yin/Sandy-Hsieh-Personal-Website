@@ -1,28 +1,36 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { FaCirclePlay } from "react-icons/fa6";
 
 const SingleProjectVideo = ({ img, alt, title, content, skills, videoSrc }) => {
     const videoRef = useRef(null);
+    const [showVideo, setShowVideo] = useState(false);
 
     const handleVideoClick = (event) => {
         event.stopPropagation();
-        const video = document.getElementById('project-video');
-        video.style.display = 'block';
+        setShowVideo(true);
+        const video = videoRef.current;
+        if (video) {
+            video.style.display = 'block';
 
-        const handleClickOutside = (event) => {
-            if (videoRef.current && !videoRef.current.contains(event.target)) {
-                video.style.display = 'none';
-            }
-        };
-        document.addEventListener('click', handleClickOutside);
+            const handleClickOutside = (event) => {
+                if (videoRef.current && !videoRef.current.contains(event.target)) {
+                    setShowVideo(false);
+                    video.style.display = 'none';
+                }
+            };
+            document.addEventListener('click', handleClickOutside);
 
-        video.addEventListener('ended', () => {
-            document.removeEventListener('click', handleClickOutside);
-        });
+            video.addEventListener('ended', () => {
+                document.removeEventListener('click', handleClickOutside);
+            });
+        }
     };
 
     return (
-        <div className="singleProject singleProjectVideo" onClick={handleVideoClick}>
+        <div
+            className={`singleProject singleProjectVideo ${showVideo ? 'showVideo' : ''}`}
+            onClick={handleVideoClick}>
+
             <img className='img' alt={alt} src={img} />
             <FaCirclePlay className='playIcon' />
             <h4 className='title'>
