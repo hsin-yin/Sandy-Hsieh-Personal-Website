@@ -65,7 +65,7 @@ const Projects = () => {
                     videoSrc={MERNprojectVideo}
                 />
             </>
-            <a target="_blank" rel="noreferrer" href='https://burger-bucket.s3.amazonaws.com/index.html'>
+            <a target="_blank" rel="noreferrer" href='https://fastfood-static-website.up.railway.app'>
                 <SingleProject
                     img={burgerWebsiteImg}
                     alt={burgerWebsiteAlt}
