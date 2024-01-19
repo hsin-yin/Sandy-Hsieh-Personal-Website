@@ -1,7 +1,7 @@
 .main {
   width: 100%;
   margin-top: 15%;
-  padding: 0 25% 5% 5%;
+  padding: 0 20% 5% 5%;
 }
 .main .introduction, .main .project, .main .getInTouch {
   width: 100%;
@@ -13,7 +13,7 @@
   }
 }
 .main .main_content:not(.getInTouch) {
-  margin-bottom: 30%;
+  margin-bottom: 25%;
 }
 @media (max-width: 767px) {
   .main .main_content:not(.getInTouch) {
@@ -33,7 +33,13 @@
   cursor: pointer;
 }
 
-.resumeLink {
+.resumeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.resumeContainer .resumeLink {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -42,12 +48,13 @@
   border: 1px solid #b59283;
   border-radius: 20px;
   padding: 1.5%;
-  margin-top: 2%;
+  margin: 2% 3% 0 0;
+  cursor: pointer;
 }
-.resumeLink .resumeLinkPic {
-  margin-right: 2%;
+.resumeContainer .resumeLink .resumeLinkPic {
+  margin-right: 3%;
 }
-.resumeLink:hover {
+.resumeContainer .resumeLink:hover {
   background-color: #385061;
   box-shadow: 0 0 5px #b59283;
 }

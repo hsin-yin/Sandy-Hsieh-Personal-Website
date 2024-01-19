@@ -6,7 +6,7 @@ const Projects = () => {
     // project BiscuitGiftBox
     const BiscuitGiftBoxImg = '/images/BiscuitGiftBoxImg.png';
     const BiscuitGiftBoxAlt = `customise biscuit gift box`
-    const BiscuitGiftBoxTitle = `Customized Biscuit Gift Box Website (team project)`;
+    const BiscuitGiftBoxTitle = `Customized Biscuit Gift Box Website (Group Project)`;
     const BiscuitGiftBoxContent = `A website that offers customized cookie gift boxes, where you can choose the flavor of the cookies and arrange them to your liking, which will be displayed on the screen.`;
     const BiscuitGiftBoxSkills = ['CSS', 'JavaScript', 'ejs', 'Node.js', 'Express.js', 'MySQL'];
     const BiscuitGiftBoxVideo = "/videos/unidessertVideo.mp4";
@@ -30,7 +30,7 @@ const Projects = () => {
     const burgerWebsiteImg = "/images/burgerWebsiteImg.png";
     const burgerWebsiteAlt = `static fastfood website`
     const burgerWebsite = `Static Fast Food Website`;
-    const burgerWebsiteContent = `A static site consisting of multiple pages.`;
+    const burgerWebsiteContent = `A static site consisting of multiple pages.Includes restaurant menu, contact information, location.`;
     const burgerWebsiteSkills = ['CSS', 'JavaScript'];
 
     return (
