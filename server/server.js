@@ -67,7 +67,6 @@ app.post('/submit', async (req, res) => {
         };
 
         const result = await transporter.sendMail(mailOptions);
-        console.log("Email sent:", result);
         return res.status(200).json({ message: 'Form submitted successfully! Thank you for making contact.' });
         // return result;
     } catch (error) {
@@ -81,5 +80,5 @@ app.post('/submit', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running`);
 });
