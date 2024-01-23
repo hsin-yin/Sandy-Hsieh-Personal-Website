@@ -1,10 +1,9 @@
 # Sandy Hsieh Personal Website
 
 [Check It Out Here](https://sandy-hsieh.up.railway.app)
+![portfolio photo](./portfolio.png)
 
 ### Description
-
-![portfolio photo](./portfolio.png)
 
 ---
 
