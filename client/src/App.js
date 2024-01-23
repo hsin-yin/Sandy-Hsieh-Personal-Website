@@ -47,7 +47,7 @@ function App() {
     <div className='app'>
       <Header />
       <Main />
-      <footer>&copy; 2023 Sandy Hsieh</footer>
+      <footer>2024 Sandy Hsieh</footer>
     </div>
   );
 }
