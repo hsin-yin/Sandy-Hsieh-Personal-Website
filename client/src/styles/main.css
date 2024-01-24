@@ -32,6 +32,10 @@
 .main a {
   cursor: pointer;
 }
+.main .main_content .disabled-link {
+  pointer-events: none;
+  cursor: not-allowed;
+}
 
 .resumeContainer {
   display: flex;
@@ -167,7 +171,7 @@
   display: block;
 }
 .singleProjectVideo #project-video {
-  width: 80%;
+  width: 85%;
   height: auto;
   position: fixed;
   top: 50%;

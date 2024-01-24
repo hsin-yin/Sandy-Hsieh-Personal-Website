@@ -12,8 +12,6 @@ function App() {
     const handleScroll = () => {
       const halfWinInnerHigh = window.innerHeight / 2;
       let currentContentIndex = -1;
-      // const navHightlightElement = document.querySelector('.navHightlightStyle');
-      // navHightlightElement.classList.add('widthAnimation');
 
       contents.forEach((content, index) => {
         const contentOffset = content.offsetTop;
@@ -47,7 +45,7 @@ function App() {
     <div className='app'>
       <Header />
       <Main />
-      <footer>2024 Sandy Hsieh</footer>
+      <footer>Sandy Hsieh - Inspired by Brittany Chiang</footer>
     </div>
   );
 }

@@ -1,14 +1,16 @@
 import React, { useState, useRef } from 'react';
 import { FaCirclePlay } from "react-icons/fa6";
 
-const SingleProjectVideo = ({ img, alt, title, content, skills, videoSrc }) => {
+const SingleProjectVideo = ({ img, alt, title, content, skills, videoSrc, setDisableLink }) => {
     const videoRef = useRef(null);
     const [showVideo, setShowVideo] = useState(false);
 
     const handleVideoClick = (event) => {
         event.stopPropagation();
         setShowVideo(true);
+        setDisableLink(true);
         const video = videoRef.current;
+
         if (video) {
             video.style.display = 'block';
 
@@ -17,6 +19,7 @@ const SingleProjectVideo = ({ img, alt, title, content, skills, videoSrc }) => {
                     setShowVideo(false);
                     video.pause()
                     video.style.display = 'none';
+                    setDisableLink(false);
                 }
             };
             document.addEventListener('click', handleClickOutside);

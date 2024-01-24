@@ -25,6 +25,12 @@
     a {
         cursor: pointer;
     }
+    .main_content{
+        .disabled-link {
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+    }
 }
 
 @import "./aboutMe";

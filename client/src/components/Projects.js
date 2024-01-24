@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SingleProject from './SingleProject';
 import SingleProjectVideo from './SingleProjectVideo';
 
@@ -33,6 +33,8 @@ const Projects = () => {
     const burgerWebsiteContent = `A static site consisting of multiple pages.Includes restaurant menu, contact information, location.`;
     const burgerWebsiteSkills = ['CSS', 'JavaScript'];
 
+    const [disableLink, setDisableLink] = useState(false);
+
     return (
         <div id="project" className="main_content project">
             <h3>Projects</h3>
@@ -44,17 +46,31 @@ const Projects = () => {
                     content={BiscuitGiftBoxContent}
                     skills={BiscuitGiftBoxSkills}
                     videoSrc={BiscuitGiftBoxVideo}
+                    setDisableLink={setDisableLink}
                 />
             </>
-            <a target="_blank" rel="noreferrer" href='https://stock-photo-website-production.up.railway.app'>
-                <SingleProject
-                    img={photosWebsiteImg}
-                    alt={photosWebsiteAlt}
-                    title={photosWebsiteTitle}
-                    content={photosWebsiteContent}
-                    skills={photosWebsiteSkills}
-                />
-            </a>
+            {disableLink ? (
+                <>
+                    <SingleProject
+                        img={photosWebsiteImg}
+                        alt={photosWebsiteAlt}
+                        title={photosWebsiteTitle}
+                        content={photosWebsiteContent}
+                        skills={photosWebsiteSkills}
+                    />
+                </>
+            ) : (
+                <a target="_blank" rel="noreferrer" href='https://stock-photo-website-production.up.railway.app'>
+                    <SingleProject
+                        img={photosWebsiteImg}
+                        alt={photosWebsiteAlt}
+                        title={photosWebsiteTitle}
+                        content={photosWebsiteContent}
+                        skills={photosWebsiteSkills}
+                    />
+                </a>
+            )}
+
             <>
                 <SingleProjectVideo
                     img={MERNprojectImg}
@@ -63,17 +79,30 @@ const Projects = () => {
                     content={MERNprojectContent}
                     skills={MERNprojectSkills}
                     videoSrc={MERNprojectVideo}
+                    setDisableLink={setDisableLink}
                 />
             </>
-            <a target="_blank" rel="noreferrer" href='https://fastfood-static-website.up.railway.app'>
-                <SingleProject
-                    img={burgerWebsiteImg}
-                    alt={burgerWebsiteAlt}
-                    title={burgerWebsite}
-                    content={burgerWebsiteContent}
-                    skills={burgerWebsiteSkills}
-                />
-            </a>
+            {disableLink ? (
+                <>
+                    <SingleProject
+                        img={burgerWebsiteImg}
+                        alt={burgerWebsiteAlt}
+                        title={burgerWebsite}
+                        content={burgerWebsiteContent}
+                        skills={burgerWebsiteSkills}
+                    />
+                </>
+            ) : (
+                <a target="_blank" rel="noreferrer" href='https://fastfood-static-website.up.railway.app'>
+                    <SingleProject
+                        img={burgerWebsiteImg}
+                        alt={burgerWebsiteAlt}
+                        title={burgerWebsite}
+                        content={burgerWebsiteContent}
+                        skills={burgerWebsiteSkills}
+                    />
+                </a>
+            )}
         </div>
     )
 }
