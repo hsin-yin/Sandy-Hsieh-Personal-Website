@@ -218,7 +218,7 @@
 .contactForm {
   display: flex;
   flex-direction: column;
-  margin-bottom: 17%;
+  margin-bottom: 18%;
 }
 .contactForm label {
   display: block;
