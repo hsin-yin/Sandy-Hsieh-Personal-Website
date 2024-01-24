@@ -39,7 +39,7 @@ body {
   grid-template-columns: 45% 55%;
   position: relative;
 }
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .app {
     display: grid;
     justify-content: center;

@@ -7,7 +7,7 @@
   width: 100%;
   height: auto;
 }
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .main .introduction, .main .project, .main .getInTouch {
     width: 80%;
   }
@@ -15,12 +15,12 @@
 .main .main_content:not(.getInTouch) {
   margin-bottom: 25%;
 }
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .main .main_content:not(.getInTouch) {
     margin-bottom: 20%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 899px) {
   .main {
     padding: 0%;
     display: flex;
@@ -65,7 +65,7 @@
 
 .singleProject {
   background-color: #385061;
-  padding: 3% 4%;
+  padding: 3.5% 4%;
   margin-top: 4%;
   border-radius: 15px;
   display: grid;
@@ -73,7 +73,7 @@
   grid-template-rows: 15% 65% 20%;
   justify-content: center;
   align-items: center;
-  min-width: 440px;
+  min-width: 430px;
 }
 .singleProject .img {
   color: #dad0ce;
@@ -117,9 +117,10 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .singleProject .skill {
-  margin-right: 1%;
+  margin: 0 1% 1% 0;
   padding: 1.5%;
   background-color: #304655;
   color: #dad0ce;
@@ -129,7 +130,11 @@
 .singleProject video {
   display: none;
 }
-@media screen and (min-width: 768px) and (max-width: 1130px) {
+
+@media screen and (min-width: 900px) and (max-width: 1130px) {
+  .singleProject {
+    min-width: none;
+  }
   .singleProject .img {
     display: none;
   }
@@ -145,6 +150,9 @@
   }
 }
 @media screen and (max-width: 552px) {
+  .singleProject {
+    min-width: auto;
+  }
   .singleProject .img {
     display: none;
   }
@@ -152,7 +160,6 @@
     grid-column: 1/3;
   }
 }
-
 .singleProjectVideo .playIcon {
   color: rgb(110, 107, 107);
   grid-column: 1/2;
@@ -183,7 +190,8 @@
 .singleProjectVideo .showVideo video {
   display: block;
 }
-@media screen and (min-width: 768px) and (max-width: 1130px) {
+
+@media screen and (min-width: 900px) and (max-width: 1130px) {
   .singleProjectVideo .playIcon {
     z-index: 1;
     grid-column: 1/3;
@@ -199,7 +207,6 @@
     color: #dad0ce;
   }
 }
-
 .thanks {
   padding: 0;
 }
@@ -211,7 +218,7 @@
 .contactForm {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10%;
+  margin-bottom: 17%;
 }
 .contactForm label {
   display: block;
