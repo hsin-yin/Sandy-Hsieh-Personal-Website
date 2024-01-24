@@ -9,6 +9,7 @@ const SingleProjectVideo = ({ img, alt, title, content, skills, videoSrc, setDis
         event.stopPropagation();
         setShowVideo(true);
         setDisableLink(true);
+        disableScroll();
         const video = videoRef.current;
 
         if (video) {
@@ -20,10 +21,19 @@ const SingleProjectVideo = ({ img, alt, title, content, skills, videoSrc, setDis
                     video.pause()
                     video.style.display = 'none';
                     setDisableLink(false);
+                    enableScroll();
                 }
             };
             document.addEventListener('click', handleClickOutside);
         }
+    };
+
+    const disableScroll = () => {
+        document.body.style.overflow = 'hidden';
+    };
+
+    const enableScroll = () => {
+        document.body.style.overflow = 'auto';
     };
 
     return (

@@ -15,7 +15,7 @@ const Projects = () => {
     const photosWebsiteImg = "/images/photosWebsiteImg.png";
     const photosWebsiteAlt = `Stock Photos website`;
     const photosWebsiteTitle = `Stock Photo website`;
-    const photosWebsiteContent = `Use the pexels's API, provides a gallery as well as the ability to search for photos, which can help anyone in need of visuals to find great images and videos that can be downloaded and used for free.`;
+    const photosWebsiteContent = `Use the pexels's API, provides the ability to search for photos, which can help anyone in need of visuals to find great images that can be downloaded and used for free.`;
     const photosWebsiteSkills = ['React', 'Scss'];
 
     // MERN project
