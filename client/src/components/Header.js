@@ -13,7 +13,7 @@ const Header = () => {
             <p>On my journey to becoming a Frontend Developer, I specialize in creating engaging user interfaces and optimizing website performance. I hope everyone enjoys exploring my projects or reaching out to connect with me!</p>
             <ul className='socialMedia'>
                 <li>
-                    <a target="_blank" rel="noreferrer" href='#'>
+                    <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/sandy-hsieh-a0a131282/'>
                         <FaLinkedin />
                     </a>
                 </li>
