@@ -54,13 +54,18 @@
   padding: 1.5%;
   margin: 2% 3% 0 0;
   cursor: pointer;
+  min-width: 90px;
 }
 .resumeContainer .resumeLink .resumeLinkPic {
   margin-right: 3%;
+  min-width: 16px;
 }
 .resumeContainer .resumeLink:hover {
   background-color: #385061;
   box-shadow: 0 0 5px #b59283;
+}
+.resumeContainer .resumeLinkPic_c {
+  min-width: 70px;
 }
 
 .singleProject {

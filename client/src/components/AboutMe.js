@@ -12,7 +12,7 @@ const AboutMe = () => {
             </p>
             <div className='resumeContainer'>
                 <a target="_blank" rel="noreferrer" href='resume.pdf' className='resumeLink' ><MdOutlineFileDownload className='resumeLinkPic' />Resume</a>
-                <a target="_blank" rel="noreferrer" href='resume_c.pdf' className='resumeLink' ><MdOutlineFileDownload className='resumeLinkPic' />履歷</a>
+                <a target="_blank" rel="noreferrer" href='resume_c.pdf' className='resumeLink resumeLinkPic_c' ><MdOutlineFileDownload className='resumeLinkPic' />履歷</a>
             </div>
 
         </div>

@@ -8,12 +8,17 @@
         padding: 1.5%;
         margin: 2% 3% 0 0;
         cursor: pointer;
+        min-width: 90px;
         .resumeLinkPic {
             margin-right: 3%;
+            min-width: 16px;
         }
         &:hover {
             background-color: $light-primary-color;
             box-shadow: 0 0 5px $secondary-color;
         }
+    }
+    .resumeLinkPic_c {
+        min-width: 70px;
     }
 }
