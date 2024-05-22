@@ -45,7 +45,7 @@ function App() {
     <div className='app'>
       <Header />
       <Main />
-      <footer>Sandy Hsieh - Inspired by Brittany Chiang</footer>
+      <footer>Sandy Hsieh</footer>
     </div>
   );
 }

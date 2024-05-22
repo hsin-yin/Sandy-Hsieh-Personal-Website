@@ -8,12 +8,12 @@ $mobile: 899px;
 // 膚色 #b59283 灰 #c7bfbc 淺米色 #e5d4cd
 
 // Toggle between dark and light mode
-@mixin theme($light-theme: true) {
-    @if $light-theme {
-        background-color: lighten($primary-color, 100%);
-        color: darken($text-color, 100%)
-    }
-}
+// @mixin theme($light-theme: true) {
+//     @if $light-theme {
+//         background-color: lighten($primary-color, 100%);
+//         color: darken($text-color, 100%)
+//     }
+// }
 
 @mixin transition-ease($property: all, $seconds: 0.3s) {
     transition: $property $seconds ease-in-out;
