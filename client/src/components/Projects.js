@@ -30,7 +30,7 @@ const Projects = () => {
       title: 'Stock Photo website',
       content: `Use the pexels's API, provides the ability to search for photos, which can help anyone in need of visuals to find great images that can be downloaded and used for free.`,
       skills: ['React', 'Scss'],
-      videoSrc: '/videos/MERNVideo.mp4',
+      link: 'https://stock-photo-website-production.up.railway.app',
     },
     {
       type: 'video',
@@ -40,7 +40,7 @@ const Projects = () => {
       content:
         'A website that offers customized cookie gift boxes, where you can choose the flavor of the cookies and arrange them to your liking, which will be displayed on the screen.',
       skills: ['CSS', 'JavaScript', 'ejs', 'Node.js', 'Express.js', 'MySQL'],
-      link: 'https://stock-photo-website-production.up.railway.app',
+      videoSrc: '/videos/unidessertVideo.mp4',
     },
     {
       type: 'link',
