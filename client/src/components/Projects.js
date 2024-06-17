@@ -40,7 +40,7 @@ const Projects = () => {
       content:
         'A website that offers customized cookie gift boxes, where you can choose the flavor of the cookies and arrange them to your liking, which will be displayed on the screen.',
       skills: ['CSS', 'JavaScript', 'ejs', 'Node.js', 'Express.js', 'MySQL'],
-      videoSrc: '/videos/unidessertVideo.mp4',
+      link: 'https://stock-photo-website-production.up.railway.app',
     },
     {
       type: 'link',
